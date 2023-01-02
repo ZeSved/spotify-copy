@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script async type="module" src="./src/main.js"></script>
+  <title>Hangman</title>
+</head>
+<body>
+  <main>
+    <p class="word">Loading word...</p>
+    <p class="win-lose"></p>
+    <form class="guess--form">
+      <input class="input" placeholder="Type your guess here" type="text">
+    </form>
+    <button class="new-word">Generate a new word</button>
+    <section class="hangman-island">
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+      <div class="box box4"></div>
+      <div class="box box5"></div>
+      <div class="box box6"></div>
+      <div class="box box7"></div>
+      <div class="box box8"></div>
+      <div class="box box9"></div>
+      <div class="box box10"></div>
+    </section>
+    <section class="instructions">
+      <h3>Hangman instructions:</h3>
+      <ul>
+        <li>The system will give you a random word from the english dictionary of any length.</li>
+        <li>Inside the box with "Type your guess here" you type either a single letter or an entire word if you
+          think you know what it is, if you are correct, the _ will be replaced with the letter or the word.
+        </li>
+        <li>If you press the "Generate a new word" button, a new word will be generated and all
+          guesses will be reset.
+        </li>
+        <li>Those 5 boxes are your lifes, when you get a letter/word wrong one box becomes white (checked). if all
+          5 boxes are checked you lose.
+        </li>
+        <li>Good luck!</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
